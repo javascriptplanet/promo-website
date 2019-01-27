@@ -246,7 +246,10 @@ a.btn.btn-primary {
 /*--------------------
  	Our Work Section
 ---------------------*/
-
+section.our-work {
+	padding-left: 10px;
+	padding-right: 10px;
+}
 .оur-work{
 	background-color: #fff;
 }
@@ -284,11 +287,14 @@ a.btn.btn-primary {
     text-decoration: underline;
     line-height: 120%;
 }
+.small-block.block.articles-block {
+	padding: 0px !important;
+}
 
 .our-work .articles-list{
 	text-align: left;
     padding: 20px;
-    min-width: 400px;
+    min-width: 360px;
     margin: 20px;
 	display: block;
 	background: #999;
@@ -302,7 +308,7 @@ a.btn.btn-primary {
 }
 
 
-@media (max-width: 850px){
+@media (max-width: 950px){
 
 	.our-work .grid li.block.small-block,
 	.our-work .grid li.block.large{
@@ -312,6 +318,10 @@ a.btn.btn-primary {
 	.modal-dialog {
 		width: calc(90vh) !important;
 		margin: 0 auto !important;
+	}
+
+	.articles-list {
+		min-width: auto !important;
 	}
 
 }
@@ -581,7 +591,6 @@ footer ul li:last-child{
 }
 
 footer p{
-	text-transform: uppercase;
 	font-size: 14px;
 	color: rgba(255,255,255,0.6);
 	margin-bottom: 10px;
